@@ -96,7 +96,7 @@ pom.xml
 
 # Gotchas
 
-- `commons-logging`, `commons-collections`, `commons-lang`, and `xml-apis` are explicitly excluded from Batik transitive deps to avoid OSGi conflicts — do not re-introduce them.
+- `commons-logging` and `xml-apis-ext` are explicitly excluded from `batik-css` transitive deps in `pom.xml` to avoid OSGi conflicts — do not re-introduce them.
 - The runtime intentionally avoids Log4j 1.x; keep transitive logging dependencies constrained to SLF4J-compatible paths.
 - The `sling-org-apache-sling-xss` artifact itself is excluded from `sling-mock.junit5` in test scope to prevent stale OSGi metadata from older releases interfering with tests.
 - `AntiSamyPolicyAdapter` intentionally uses `sun.misc.Unsafe` plus a Java 22+ fallback path to clear html-sanitizer attribute guards across JDK versions; avoid refactoring this blindly.

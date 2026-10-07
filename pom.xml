@@ -255,7 +255,6 @@
     <!-- B U I L D                                                               -->
     <!-- ======================================================================= -->
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.sling</groupId>
