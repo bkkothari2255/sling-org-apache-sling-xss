@@ -32,4 +32,5 @@ Import-Package: !bsh, \
 Private-Package: org.apache.sling.xss.impl, \
                  org.apache.batik.*, \
                  org.w3c.css.sac, \
+                 org.owasp.shim;-split-package:=merge-first, \
                  org.owasp.html.*;-split-package:=merge-first
